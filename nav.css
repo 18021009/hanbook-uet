@@ -1,16 +1,20 @@
 body{
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .nav-bar{
     display: block;
     flex-wrap: wrap;
-    background-color: blue;
+    background-color: #015198;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .nav{
     display:flex;
     justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .logo{
@@ -31,33 +35,42 @@ body{
     display: none;
 }
 
-.nav-items.actived{
-    display: block;
-    padding: 10px;
-}
-
 .nav-item{
-    display: block;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    background-color: blue;
+    background-color: #015198;
     padding: 10px 0 0 0;
     color: white;
+    cursor: pointer;
+    flex-basis: 20%;
 }
 
 .nav-item .dropdown-content{
-    display: none;
-    background-color: blue;
+    display: block;
+    transition: all 0.5s;
+    max-height: 0;
+    width: 100%;
+    overflow-y: hidden;
 }
 
-.nav-item.actived{
+.nav-item .dropdown-content a {
+    background-color: #000b16;
+}
+
+.nav-item .dropdown-content a:hover {
+    background-color: #0067c7;
+}
+
+.nav-item:hover {
     display: block;
     text-align: center;
-    background-color: blue;
+    background-color: #003b6e;
     padding: 10px 0 0 0;
 }
 
-.nav-item.actived .dropdown-content{
-    display: block;
+.nav-item:hover .dropdown-content{
+    max-height: 600px;
 }
 
 .nav-item p{
@@ -79,10 +92,12 @@ body{
         flex-wrap: nowrap;
         height: 100px;
         justify-content: space-around;
+        font-family: 'Open Sans', sans-serif;
     }
 
     .nav{
         display:inline-block;
+        font-family: 'Open Sans', sans-serif;
     }
 
     .menu-button{
@@ -101,40 +116,40 @@ body{
         position: relative;
     }
 
-    .nav-item.actived{
+    .nav-item:hover {
         display:flex;
         align-items: center;
         position: relative;
     }
 
-    .nav-item.actived .dropdown-content{
+    .nav-item:hover .dropdown-content{
         display: block;
         position: absolute;
-        background-color: blue;
+        background-color: #015198;
         top: 100px;
-        width: 250px;
+        min-width: 250px;
         left: 0;
         z-index: 1;
     }
 
     .nav-item .dropdown-content {
-        display: none;
         position: absolute;
-        background-color: blue;
+        background-color: #015198;
         top: 100px;
-        width: 250px;
+        min-width: 250px;
         left: 0;
         z-index: 1;
     }
 
-    .dropdown-content a {
+    .nav-item:hover .dropdown-content a {
         color: white;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
     }
 
+
     a:hover{
-        background-color: #007bff;
+        color: #015198;
     }
 }

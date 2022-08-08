@@ -5,10 +5,11 @@
   padding: 10px 10px 10px 10px;
   text-align: justify;
   min-height: calc(100vh - 312px);
+  font-family: 'Open Sans', sans-serif;
 }
 
 .info-title {
-    font-family: Opensans-bold;
+  font-family: 'Open Sans', sans-serif;
   }
   .info-content {
     padding-left: 50px;
@@ -29,6 +30,6 @@
     margin: auto;
     min-height: calc(100vh - 235px);
     padding-top: 10px;
+    font-family: 'Open Sans', sans-serif;
   }
 }
-

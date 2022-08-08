@@ -4,6 +4,9 @@
     margin: auto;
     padding: 10px;
     text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    min-height: calc( 100vh - 234px );
 }
 ul{
     padding: 10px 0 10px 0;
@@ -24,3 +27,6 @@ a{
     }
 }
 
+.address-paragraph {
+  padding: 0px 0px 0px 0px;
+}
